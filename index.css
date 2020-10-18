@@ -1,0 +1,137 @@
+@import url(//db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald);
+@import url(//db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans);
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    /* height: 6563px; */
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+}
+
+.home_screen {
+    background: linear-gradient(177.86deg, #000000 -41.81%, rgba(0, 0, 0, 0.0001) 82.48%);
+    background: url("img/black.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.header_nav {
+    display: flex;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.75px;
+    letter-spacing: 1.94px;
+    text-transform: uppercase;
+}
+
+.header_nav-list {
+    display: flex;
+    margin-right: 313.48px;
+    margin-top: 79px;
+    list-style-type: none;
+    color: white;
+}
+
+.header_nav-list :not(:last-child) {
+    margin-right: 58.4px;
+}
+
+.header_nav-link {
+    display: block;
+    text-decoration: none;
+}
+
+.header_nav-link-underlined {
+    border-bottom: 2px solid #4CAF50;
+}
+
+.header_nav-list-item :hover {
+    border-bottom: 2px solid #4CAF50;
+    cursor: pointer;
+}
+
+.huge_text {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4.608px;
+    color: white;
+    padding-top: 283px;
+    padding-bottom: 24px;
+}
+
+.small_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    /* text-align: center; */
+    letter-spacing: 1.28px;
+    
+    color: #FFFFFF;
+    
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin-bottom: 303px;
+}
+
+.digits {
+    display: flex;
+    flex: 0 0 auto;
+    height: 49px;
+    align-self: center;
+    /* margin-bottom: 19px; */
+}
+
+.digits :not(:last-child) {
+    padding-right: 9px;
+}
+
+.one_digit {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26.68px;
+    letter-spacing: 1.15px;
+    color: #777;
+}
+
+.one_digit :hover {
+    font-size: 36px;
+    color: white;
+    line-height: 10px;
+    letter-spacing: 2.3px;
+    cursor: pointer;
+    text-decoration: line-through;
+    text-decoration-style: solid;
+    text-decoration-color: #4CAF50;
+}
