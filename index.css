@@ -1,5 +1,6 @@
 @import url(//db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald);
 @import url(//db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
     box-sizing: border-box;
@@ -17,7 +18,7 @@ html, body {
 
 .home_screen {
     background: linear-gradient(177.86deg, #000000 -41.81%, rgba(0, 0, 0, 0.0001) 82.48%);
-    background: url("img/black.png") no-repeat;
+    background: url(img/black.png) no-repeat;
     background-attachment: fixed;
     background-position: center;
     display: flex;
@@ -86,7 +87,7 @@ html, body {
 }
 
 .small_text {
-    font-family: Open Sans;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -134,4 +135,259 @@ html, body {
     text-decoration: line-through;
     text-decoration-style: solid;
     text-decoration-color: #4CAF50;
+}
+
+/**
+CSS rules for second block ('We are the SQWD'...)
+*/
+
+.screen_sqwd {
+    background: white;
+    display: flex;
+    flex: 0 0 1800px;
+    flex-direction: column;
+    max-width: 1800px;
+    max-height: 825px;
+    padding: 149px 353px 117px 105px;
+}
+
+.guy {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    min-width: 590px;
+    min-height: 391px;
+    background: url(img/guy.png) no-repeat;
+    background-color: white;
+    background-position: right;
+    z-index: 2;
+}
+
+.standing {
+    position: relative;
+    top: -215px;
+    left: 203px;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    min-width: 506px;
+    min-height: 391px;
+    background: url(img/standing.png) no-repeat;
+    background-color: white;
+    background-position: left;
+    z-index: 0;
+}
+
+.text_we-are {
+    display: inline;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 53.35px;
+    letter-spacing: 2.3px;
+    color: #333;
+    text-transform: uppercase;
+    padding-top: 82px;
+    padding-left: 80px;
+}
+
+.text_the-sqwd {
+    display: inline;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 57px;
+    letter-spacing: 2.69px;
+    color: #504E4E;
+    text-transform: uppercase;
+    padding-top: 4px;
+    padding-left: 90px;
+    padding-bottom: 32px;
+}
+
+.text_quote {
+    display: inline;
+    min-width: 281px;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 1.26px;
+    color: #5B5858;
+}
+
+.text_quote-for-guy {
+    margin-left: 140px;
+}
+
+.text_quote-for-standing {
+    margin-left: 288px;
+    margin-top: 236px;
+}
+
+.block-green-translucent {
+    width: 309px;
+    height: 418px;
+    margin-top: 71px;
+    margin-left: 222px;
+    position: absolute;
+    align-self: center;
+    background: #4CAF50;
+    opacity: 0.8;
+    z-index: 1;
+}
+
+/**
+CSS rules for third block ('Our Services'...)
+*/
+
+.block_services {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+    height: 690px;
+    background: #FBFBFB;
+    padding: 129px 312px 136px 315px;
+}
+
+.services_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.services_row :not(:last-child) {
+    margin-right: 28px;
+}
+
+.services_container {
+    background: white;
+    min-width: 373px;
+    min-height: 260px;
+    padding: 50px 48px 35px 44px;
+}
+
+.services_container :first-of-type:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.services_container:hover {
+    border-bottom: #4CAF50 2px solid;
+}
+
+.services_container-caption {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 29.64px;
+    letter-spacing: 1.28px;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.services_container-caption-underlined {
+    border-bottom: #252525 2px solid;
+    padding-bottom: 15px;
+}
+
+.services_container-read-more {
+    display: inline-block;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 14.82px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+    color: #929292;
+    margin-top: 19px;
+}
+
+.services_container-text {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 1.01px;
+    color: #777;
+    margin-top: 36px;
+}
+
+.services_container-icon-branding {
+    align-self: flex-end;
+    position: absolute;
+    margin-left: 225px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    background: url(img/graphic-design.png) no-repeat;
+    background-blend-mode: normal;
+    opacity: 50%;
+    box-shadow: 0 0 20px #DBDBDB;
+    background-position: center;
+}
+
+.services_container-icon-design {
+    align-self: flex-end;
+    position: absolute;
+    margin-left: 225px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    background: url(img/pencil-case.png) no-repeat;
+    background-blend-mode: normal;
+    opacity: 50%;
+    box-shadow: 0 0 20px #DBDBDB;
+    background-position: center;
+}
+
+.services_container-icon-development {
+    align-self: flex-end;
+    position: absolute;
+    margin-left: 225px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    background: url(img/coding.png) no-repeat;
+    background-blend-mode: normal;
+    opacity: 50%;
+    box-shadow: 0 0 20px #DBDBDB;
+    background-position: center;
+}
+
+.services_container-read-more :hover {
+    cursor: pointer;
+    color: black;
+}
+
+/* The main heading used on several pages*/
+.heading {
+    display: inline;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 71.14px;
+    letter-spacing: 3.07px;
+    margin-bottom: 94px;
+}
+
+.heading_underlined {
+    border-bottom: #252525 2px solid;
+    padding-bottom: 7px;
+}
+
+/**
+CSS rules for 4th block ('Latest Works'...)
+*/
+
+.block_works {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+    min-height: 1989px;
+    max-width: 1800px;
+    background: #F2F2F2;
+    padding: 146px 217px 173px 365px;
 }
