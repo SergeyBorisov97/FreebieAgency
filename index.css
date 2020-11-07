@@ -431,13 +431,26 @@ CSS rules for 4th block ('Latest Works'...)
 
 .works_photography-kitten {
     background: url(img/kitten.png) center no-repeat;
+    position: relative;
+    left: -124px;
+    top: -3px;
     width: 679px;
     height: 453px;
     margin-top: 158px;
 }
 
+.works_photography-camera {
+    background: url(img/photo.png) center no-repeat;
+    width: 727px;
+    height: 482px;
+    position: relative;
+    top: 146px;
+    left: 42px;
+    right: 217px;
+}
+
 .works_photography-caption {
-    display: inline;
+    display: inline-block;
     color: #252525;
     font-family: 'Oswald', 'Arial', sans-serif;
     font-weight: 300;
@@ -457,6 +470,7 @@ CSS rules for 4th block ('Latest Works'...)
 
 .works_photography-annotation {
     display: inline-flex;
+    flex-direction: column;
     width: 679px;
     height: 150px;
     align-self: center;
@@ -464,7 +478,7 @@ CSS rules for 4th block ('Latest Works'...)
 }
 
 .works_photography-annotation-title {
-    align-self: center;
+    display: flex;
     text-align: center;
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
     color: #252525;
@@ -474,15 +488,46 @@ CSS rules for 4th block ('Latest Works'...)
     letter-spacing: 1.15px;
 }
 
-.works_photography-annotation-text-left {
+.works_photography-annotation-text-left-align {
     text-align: left;
+    padding-left: 150px;
 }
 
-.works_photography-annotation-text-right {
+.works_photography-annotation-text-right-align {
     text-align: right;
 }
 
+.works_photography-annotation-main-text {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 23px;
+    letter-spacing: 0.83px;
+    color: #C2C2C2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.works_photography-annotation-read-more {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17.7px;
+    letter-spacing: 0.83px;
+    color: #252525;
+}
+
+.works_photography-annotation-read-more a:hover {
+    cursor: pointer;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #70BF73;
+    text-underline-position: auto;
+}
+
 .works_photography-caption-kitten {
-    position: absolute;
-    padding: 271px 23px 40px 494px;
+    position: relative;
+    top: 271px;
+    left: 494px;
 }
