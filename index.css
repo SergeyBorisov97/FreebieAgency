@@ -144,9 +144,9 @@ CSS rules for second block ('We are the SQWD'...)
 .screen_sqwd {
     background: white;
     display: flex;
-    flex: 0 0 1800px;
+    flex: 0 0 1900px;
     flex-direction: column;
-    max-width: 1800px;
+    max-width: 1900px;
     max-height: 825px;
     padding: 149px 353px 117px 105px;
 }
@@ -248,11 +248,13 @@ CSS rules for third block ('Our Services'...)
     height: 690px;
     background: #FBFBFB;
     padding: 129px 312px 136px 315px;
+    margin: 0px 50px;
 }
 
 .services_row {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .services_row :not(:last-child) {
@@ -385,9 +387,102 @@ CSS rules for 4th block ('Latest Works'...)
 .block_works {
     display: flex;
     flex-direction: column;
-    flex: 0 0 0;
+    flex-wrap: wrap;
+    flex: 1 1 0;
     min-height: 1989px;
-    max-width: 1800px;
-    background: #F2F2F2;
+    background: white;
     padding: 146px 217px 173px 365px;
+}
+
+.works_menu {
+    display: inline;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0;
+}
+
+.works_menu-list {
+    display: flex;
+    list-style-type: none;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.works_menu-list :first-child {
+    padding-inline-start: 0;
+}
+
+.works_menu-list-item {
+    display: inline;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17.7px;
+    letter-spacing: 0.83px;
+    text-transform: uppercase;
+    color: #BEBEBE;
+}
+
+.works_menu-list-item a:hover {
+    cursor: pointer;
+    color: #252525;
+    font-weight: 600;
+}
+
+.works_photography-kitten {
+    background: url(img/kitten.png) center no-repeat;
+    width: 679px;
+    height: 453px;
+    margin-top: 158px;
+}
+
+.works_photography-caption {
+    display: inline;
+    color: #252525;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 71.14px;
+    letter-spacing: 3.07px;
+    text-transform: uppercase;
+}
+
+.works_photography-caption a:hover {
+    cursor: pointer;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #70BF73;
+    text-underline-position: auto;
+}
+
+.works_photography-annotation {
+    display: inline-flex;
+    width: 679px;
+    height: 150px;
+    align-self: center;
+    padding-top: 17px;
+}
+
+.works_photography-annotation-title {
+    align-self: center;
+    text-align: center;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 24.51px;
+    letter-spacing: 1.15px;
+}
+
+.works_photography-annotation-text-left {
+    text-align: left;
+}
+
+.works_photography-annotation-text-right {
+    text-align: right;
+}
+
+.works_photography-caption-kitten {
+    position: absolute;
+    padding: 271px 23px 40px 494px;
 }
