@@ -254,7 +254,7 @@ CSS rules for third block ('Our Services'...)
 .services_row {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
 }
 
 .services_row :not(:last-child) {
@@ -385,13 +385,14 @@ CSS rules for 4th block ('Latest Works'...)
 */
 
 .block_works {
+    position: relative;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1 1 0;
     min-height: 1989px;
     background: white;
-    padding: 146px 217px 173px 365px;
+    padding: 146px 217px 173px 170px;
 }
 
 .works_menu {
@@ -429,6 +430,14 @@ CSS rules for 4th block ('Latest Works'...)
     font-weight: 600;
 }
 
+.works_photography-photo-camera-container {
+    display: inline;
+    flex-direction: column;
+    position: absolute;
+    top: 146px;
+    left: 760px;
+}
+
 .works_photography-kitten {
     background: url(img/kitten.png) center no-repeat;
     position: relative;
@@ -443,10 +452,6 @@ CSS rules for 4th block ('Latest Works'...)
     background: url(img/photo.png) center no-repeat;
     width: 727px;
     height: 482px;
-    position: relative;
-    top: 146px;
-    left: 42px;
-    right: 217px;
 }
 
 .works_photography-caption {
@@ -469,7 +474,7 @@ CSS rules for 4th block ('Latest Works'...)
 }
 
 .works_photography-annotation {
-    display: inline-flex;
+    position: relative;
     flex-direction: column;
     width: 679px;
     height: 150px;
@@ -478,8 +483,8 @@ CSS rules for 4th block ('Latest Works'...)
 }
 
 .works_photography-annotation-title {
-    display: flex;
-    text-align: center;
+    display: contents;
+    position: relative;
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
     color: #252525;
     font-size: 18px;
@@ -490,7 +495,6 @@ CSS rules for 4th block ('Latest Works'...)
 
 .works_photography-annotation-text-left-align {
     text-align: left;
-    padding-left: 150px;
 }
 
 .works_photography-annotation-text-right-align {
@@ -499,6 +503,8 @@ CSS rules for 4th block ('Latest Works'...)
 
 .works_photography-annotation-main-text {
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    position: relative;
+    max-width: 579px;
     font-size: 13px;
     font-weight: 300;
     line-height: 23px;
@@ -530,4 +536,10 @@ CSS rules for 4th block ('Latest Works'...)
     position: relative;
     top: 271px;
     left: 494px;
+}
+
+.works_photography-caption-camera {
+    position: relative;
+    top: 280px;
+    left: 0;
 }
