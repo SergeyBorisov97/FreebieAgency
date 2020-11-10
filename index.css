@@ -431,7 +431,7 @@ CSS rules for 4th block ('Latest Works'...)
 }
 
 .works_photography-photo-camera-container {
-    display: inline;
+    display: flex;
     flex-direction: column;
     position: absolute;
     top: 146px;
@@ -482,8 +482,12 @@ CSS rules for 4th block ('Latest Works'...)
     padding-top: 17px;
 }
 
+.works_photography-annotation :first-child {
+    text-align: left;
+}
+
 .works_photography-annotation-title {
-    display: contents;
+    display: flex;
     position: relative;
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
     color: #252525;
