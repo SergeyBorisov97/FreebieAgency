@@ -6,6 +6,17 @@
     box-sizing: border-box;
 }
 
+p {
+    display: inline;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
 html, body {
     margin: 0;
     /* height: 6563px; */
@@ -46,14 +57,14 @@ html, body {
 
 .header_nav-list {
     display: flex;
-    margin-right: 313.48px;
+    margin-right: 313px;
     margin-top: 79px;
     list-style-type: none;
     color: white;
 }
 
 .header_nav-list :not(:last-child) {
-    margin-right: 58.4px;
+    margin-right: 59px;
 }
 
 .header_nav-link {
@@ -95,7 +106,6 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    /* text-align: center; */
     letter-spacing: 1.28px;
     
     color: #FFFFFF;
@@ -121,7 +131,7 @@ html, body {
     font-family: 'Oswald', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 26.68px;
+    line-height: 27px;
     letter-spacing: 1.15px;
     color: #777;
 }
@@ -183,7 +193,7 @@ CSS rules for second block ('We are the SQWD'...)
     font-family: 'Oswald', 'Arial', sans-serif;
     font-size: 36px;
     font-weight: 700;
-    line-height: 53.35px;
+    line-height: 53px;
     letter-spacing: 2.3px;
     color: #333;
     text-transform: uppercase;
@@ -201,7 +211,7 @@ CSS rules for second block ('We are the SQWD'...)
     color: #504E4E;
     text-transform: uppercase;
     padding-top: 4px;
-    padding-left: 90px;
+    padding-left: 83px;
     padding-bottom: 32px;
 }
 
@@ -225,7 +235,7 @@ CSS rules for second block ('We are the SQWD'...)
     margin-top: 236px;
 }
 
-.block-green-translucent {
+.block_green-translucent {
     width: 309px;
     height: 418px;
     margin-top: 71px;
@@ -243,28 +253,31 @@ CSS rules for third block ('Our Services'...)
 
 .block_services {
     display: flex;
+    position: relative;
     flex-direction: column;
     flex: 0 0 0;
     height: 690px;
     background: #FBFBFB;
-    padding: 129px 312px 136px 115px;
-    margin: 0px 50px;
+    padding: 129px 0 136px 175px;
+    align-content: center;
+    justify-content: center;
 }
 
-.services_row {
+.services_row, .team_row {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
+    align-items: center;
 }
 
-.services_row :not(:last-child) {
+/* 'Services' card row and 'Teams' card row margins */
+.services_row :not(:last-child), .team_row :not(:last-child) {
     margin-right: 28px;
 }
 
 .services_container {
     background: white;
-    min-width: 373px;
-    min-height: 260px;
+    width: 373px;
+    height: 260px;
     padding: 50px 48px 35px 44px;
 }
 
@@ -281,7 +294,7 @@ CSS rules for third block ('Our Services'...)
     font-family: 'Oswald', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    line-height: 29.64px;
+    line-height: 30px;
     letter-spacing: 1.28px;
     text-transform: uppercase;
     color: #252525;
@@ -297,7 +310,7 @@ CSS rules for third block ('Our Services'...)
     font-family: 'Oswald', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 10px;
-    line-height: 14.82px;
+    line-height: 15px;
     letter-spacing: 0.64px;
     text-transform: uppercase;
     color: #929292;
@@ -366,11 +379,10 @@ CSS rules for third block ('Our Services'...)
 
 /* The main heading used on several pages*/
 .heading {
-    display: inline;
     font-family: 'Oswald', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 48px;
-    line-height: 71.14px;
+    line-height: 71px;
     letter-spacing: 3.07px;
     margin-bottom: 94px;
 }
@@ -415,10 +427,11 @@ CSS rules for 4th block ('Latest Works'...)
 
 .works_menu-list-item {
     display: inline;
+    margin-right: 41px;
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
     font-size: 13px;
     font-weight: 400;
-    line-height: 17.7px;
+    line-height: 18px;
     letter-spacing: 0.83px;
     text-transform: uppercase;
     color: #BEBEBE;
@@ -430,6 +443,14 @@ CSS rules for 4th block ('Latest Works'...)
     font-weight: 600;
 }
 
+.works_photography-photo-kitten-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-top: 158px;
+    left: 95px;
+}
+
 .works_photography-photo-camera-container {
     display: flex;
     flex-direction: column;
@@ -438,11 +459,24 @@ CSS rules for 4th block ('Latest Works'...)
     left: 760px;
 }
 
+.works_photography-photo-macbook-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1158px;
+    left: 220px;
+}
+
+.works_photography-photo-groovemade-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 843px;
+    left: 895px;
+}
+
 .works_photography-kitten {
     background: url(img/kitten.png) center no-repeat;
-    position: relative;
-    left: -124px;
-    top: -3px;
     width: 679px;
     height: 453px;
     margin-top: 158px;
@@ -454,13 +488,25 @@ CSS rules for 4th block ('Latest Works'...)
     height: 482px;
 }
 
+.works_photography-macbook {
+    background: url(img/macbook.png) no-repeat;
+    width: 455px;
+    height: 444px;
+}
+
+.works_photography-groovemade {
+    background: url(img/mac.png) center no-repeat;
+    width: 455px;
+    height: 444px;
+}
+
 .works_photography-caption {
-    display: inline-block;
+    display: block;
     color: #252525;
     font-family: 'Oswald', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 48px;
-    line-height: 71.14px;
+    line-height: 71px;
     letter-spacing: 3.07px;
     text-transform: uppercase;
 }
@@ -474,35 +520,24 @@ CSS rules for 4th block ('Latest Works'...)
 }
 
 .works_photography-annotation {
+    display: inline-block;
     position: relative;
+    width: 336px;
     flex-direction: column;
-    width: 679px;
     height: 150px;
     align-self: center;
     padding-top: 17px;
 }
 
-.works_photography-annotation :first-child {
-    text-align: left;
-}
-
 .works_photography-annotation-title {
-    display: flex;
+    display: inline;
     position: relative;
     font-family: 'Open Sans', 'Segoe UI', sans-serif;
     color: #252525;
     font-size: 18px;
     font-weight: 300;
-    line-height: 24.51px;
+    line-height: 24px;
     letter-spacing: 1.15px;
-}
-
-.works_photography-annotation-text-left-align {
-    text-align: left;
-}
-
-.works_photography-annotation-text-right-align {
-    text-align: right;
 }
 
 .works_photography-annotation-main-text {
@@ -523,7 +558,7 @@ CSS rules for 4th block ('Latest Works'...)
     text-transform: uppercase;
     font-weight: 400;
     font-size: 13px;
-    line-height: 17.7px;
+    line-height: 18px;
     letter-spacing: 0.83px;
     color: #252525;
 }
@@ -546,4 +581,96 @@ CSS rules for 4th block ('Latest Works'...)
     position: relative;
     top: 280px;
     left: 0;
+}
+
+.works_photography-caption-macbook {
+    position: relative;
+    top: 268px;
+    left: 360px;
+}
+
+.works_photography-caption-groovemade {
+    position: relative;
+    top: 266px;
+    left: -140px;
+}
+
+.works_view-more {
+    display: inline-flex;
+    position: absolute;
+    left: 1278px;
+    top: 1629px;
+    color: #252525;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.works_view-more a:hover {
+    cursor: pointer;
+    text-decoration-line: line-through;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #70BF73;
+    text-underline-position: auto;
+}
+
+/**
+CSS rules for 5th block ('The Team'...)
+*/
+
+.block_team {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 0;
+    height: 845px;
+    background: #FBFBFB;
+    padding: 129px 0 167px 175px;
+    align-content: center;
+    justify-content: center;
+}
+
+.team_container {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 370px;
+    height: 398px;
+}
+
+.team_container-jones {
+    width: 370px;
+    height: 398px;
+    background: url(img/jones.png) no-repeat;
+}
+
+.team_container-fraup {
+    width: 370px;
+    height: 398px;
+    background: url(img/fraup.png) no-repeat;
+}
+
+.team_container-cahill {
+    width: 370px;
+    height: 398px;
+    background: url(img/cahill.png) no-repeat;
+}
+
+.team_container :first-of-type:hover {
+    cursor: pointer;
+    opacity: 100%;
+}
+
+.team_container:hover {
+
+}
+
+.team_description {
+    width: 370px;
+    height: 55px;
+    background: white;
+    opacity: 0.5;
+    mix-blend-mode: normal;
 }
