@@ -658,13 +658,8 @@ CSS rules for 5th block ('The Team'...)
     background: url(img/cahill.png) no-repeat;
 }
 
-.team_container :first-of-type:hover {
-    cursor: pointer;
-    opacity: 100%;
-}
-
 .team_container:hover {
-
+    
 }
 
 .team_description {
