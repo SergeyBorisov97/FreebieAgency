@@ -1,5 +1,5 @@
-@import url(//db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald);
-@import url(//db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans);
+@import url('//db.onlinewebfonts.com/c/d40bbce8f4b00a569beac2454b69231e?family=Oswald');
+@import url('//db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 * {
@@ -34,7 +34,7 @@ html, body {
     background-attachment: fixed;
     background-position: center;
     display: flex;
-    flex: 1 1 0;
+    flex: 0 0 0;
     flex-direction: column;
 }
 
@@ -408,17 +408,23 @@ CSS rules for 4th block ('Latest Works'...)
 }
 
 .works_menu {
-    display: inline;
+    display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 0;
+    text-align: center;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.83px;
+    text-transform: uppercase;
 }
 
 .works_menu-list {
     display: flex;
     list-style-type: none;
     align-items: flex-start;
-    text-align: center;
 }
 
 .works_menu-list :first-child {
@@ -428,16 +434,13 @@ CSS rules for 4th block ('Latest Works'...)
 .works_menu-list-item {
     display: inline;
     margin-right: 41px;
-    font-family: 'Open Sans', 'Segoe UI', sans-serif;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 18px;
-    letter-spacing: 0.83px;
-    text-transform: uppercase;
+}
+
+.works_menu-link {
     color: #BEBEBE;
 }
 
-.works_menu-list-item a:hover {
+.works_menu-list-item:hover {
     cursor: pointer;
     color: #252525;
     font-weight: 600;
@@ -727,4 +730,229 @@ CSS rules for 5th block ('The Team'...)
     border: #252525 1px solid;
     width: 45px;
     margin-top: 16px;
+}
+
+/**
+CSS rules for footer block
+*/
+
+.block_footer {
+    display: grid;
+    grid-template-rows: 8fr 5fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 1200px;
+    align-items: center;
+}
+
+.footer_quote {
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    align-self: center;
+    align-items: center;
+}
+
+.footer_quote-text {
+    margin: 0;
+    width: 735px;
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 14px;
+    align-self: center;
+    line-height: 31px;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #373737;
+}
+
+.footer_quote-author {
+    display: inline;
+    margin-bottom: 25px;
+}
+
+.footer_quote-author-name {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+    text-transform: uppercase;
+    color: #373737;
+}
+
+.footer_quote-author-occupation {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+    color: #BEBEBE;
+}
+
+.footer_quote-commas {
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    background: url(img/quote-hand-drawn-symbol.png) no-repeat;
+    margin-top: 31px;
+    margin-bottom: 29px;
+}
+
+.footer_quote-stars-container {
+    display: inline-flex;
+    margin-bottom: 29px;
+}
+
+.footer_quote-stars-container :not(:last-child) {
+    margin-right: 9px;
+}
+
+.footer_quote-star {
+    width: 15px;
+    height: 15px;
+    background: url(img/star.png);
+}
+
+.footer_quote-star:hover {
+    opacity: 0.2;
+}
+
+.footer_quote-stroke {
+    width: 511px;
+    border: #D8D8D8 0.5px solid;
+    opacity: 0.5;
+}
+
+.footer_work {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #FBFBFB;
+    padding-top: 69px;
+    padding-bottom: 100px;
+}
+
+.footer_work-briefcase {
+    width: 35px;
+    height: 35px;
+    background: url(img/briefcase.png) no-repeat;
+    margin-bottom: 19px;
+}
+
+.footer_work-mail {
+    width: 35px;
+    height: 35px;
+    background: url(img/mail.png) no-repeat;
+    margin-bottom: 19px;
+}
+
+.footer_card-caption {
+    display: inline;
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35.6px;
+    letter-spacing: 2.67px;
+    text-align: center;
+}
+
+.footer_card-description {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1.56px;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.footer_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #70BD59;
+    padding-top: 69px;
+    padding-bottom: 100px;
+}
+
+.footer_card-description.footer_card-description-work,
+.footer_card-caption.footer_card-caption-work {
+    color: #373737;
+}
+
+.footer_card-description.footer_card-description-contact,
+.footer_card-caption.footer_card-caption-contact {
+    color: #FFFFFF;
+}
+
+.footer_socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: span 2;
+    height: 100%;
+    background: #2E2E2E;
+    padding-top: 142px;
+    text-align: center;
+}
+
+.footer_socials-text {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.83px;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    color: #FFFFFF;
+    padding-bottom: 39px;
+}
+
+.footer_socials-icons-container {
+    width: 138px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_socials-icons-container :not(:last-child) {
+    margin-right: 21px;
+}
+
+.footer_socials-icon-fb {
+    background: url(img/facebook-logo-in-circular-button-outlined-social-symbol.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_socials-icon-tw {
+    background: url(img/twitter-circular-button.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_socials-icon-pin {
+    background: url(img/pinterest-logo.png) no-repeat;
+    width: 32px;
+    height: 32px;
+}
+
+.footer_copyright {
+    grid-column: span 2;
+    height: 100%;
+    align-items: center;
+    background: #252525;
+}
+
+.footer_copyright-text {
+    font-family: 'Oswald', 'Arial', sans-serif;
+    font-weight: lighter;
+    font-size: 13px;
+    line-height: 19px;
+    letter-spacing: 0.83px;
+    text-align: center;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    color: #FFFFFF;
+    padding-top: 21px;
 }
