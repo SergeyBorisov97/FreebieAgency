@@ -440,17 +440,18 @@ CSS rules for 4th block ('Latest Works'...)
     color: #BEBEBE;
 }
 
-.works_menu-list-item:hover {
+.works_menu-link:hover {
     cursor: pointer;
     color: #252525;
     font-weight: 600;
 }
 
 .works_photography-photo-kitten-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     position: absolute;
-    padding-top: 158px;
+    top: 522px;
     left: 95px;
 }
 
@@ -466,7 +467,7 @@ CSS rules for 4th block ('Latest Works'...)
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 1158px;
+    top: 1208px;
     left: 220px;
 }
 
@@ -482,7 +483,6 @@ CSS rules for 4th block ('Latest Works'...)
     background: url(img/kitten.png) center no-repeat;
     width: 679px;
     height: 453px;
-    margin-top: 158px;
 }
 
 .works_photography-camera {
@@ -812,7 +812,14 @@ CSS rules for footer block
     background: url(img/star.png);
 }
 
-.footer_quote-star:hover {
+.footer_quote-star-active {
+    width: 15px;
+    height: 15px;
+    background: url(img/star.png);
+    opacity: 1;
+}
+
+.footer_quote-star-passive, .footer_quote-star:hover {
     opacity: 0.2;
 }
 
