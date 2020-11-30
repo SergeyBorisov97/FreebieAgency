@@ -29,7 +29,7 @@ html, body {
 }
 
 .home_screen {
-    background: linear-gradient(177.86deg, #000000 -41.81%, rgba(0, 0, 0, 0.0001) 82.48%);
+    position: relative;
     background: url(img/black.png) no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -69,6 +69,7 @@ html, body {
 }
 
 .header_nav-link {
+    color: white;
     display: block;
     text-decoration: none;
 }
@@ -80,6 +81,7 @@ html, body {
 .header_nav-list-item :hover {
     border-bottom: 2px solid #4CAF50;
     cursor: pointer;
+    transition: all 0.1s ease;
 }
 
 .huge_text {
@@ -146,6 +148,7 @@ html, body {
     text-decoration: line-through;
     text-decoration-style: solid;
     text-decoration-color: #4CAF50;
+    transition: all 0.3s ease;
 }
 
 /**
@@ -819,8 +822,12 @@ CSS rules for footer block
     opacity: 1;
 }
 
-.footer_quote-star-passive, .footer_quote-star:hover {
+.footer_quote-star-passive {
     opacity: 0.2;
+}
+
+.footer_quote-star:hover {
+    cursor: pointer;
 }
 
 .footer_quote-stroke {
@@ -924,6 +931,15 @@ CSS rules for footer block
 
 .footer_socials-icons-container :not(:last-child) {
     margin-right: 21px;
+}
+
+.footer_socials-icon {
+    border-radius: 16px;
+}
+
+.footer_socials-icon:hover {
+    cursor: pointer;
+    box-shadow: 2px 5px 30px #5B5858;
 }
 
 .footer_socials-icon-fb {
